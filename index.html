@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f4ef" />
+    <meta name="description" content="Explore passenger, cargo and electric three-wheelers, compare sample prices and enquire with Shree Vihaan Automobiles." />
+    <title>Shree Vihaan Automobiles | Find your next ride</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement"><span>●</span> Your next ride is closer than you think <a href="#inventory">Explore three-wheelers <span aria-hidden="true">→</span></a></div>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Shree Vihaan Automobiles home">
+        <span class="brand-mark"><svg viewBox="0 0 42 42" aria-hidden="true"><path d="M7 25.5 13.5 14h15L35 25.5M11 25.5h20M16 20h10M21 13v-3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="28" r="4.3" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="31" cy="28" r="4.3" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></span>
+        <span class="brand-copy"><strong>SHREE VIHAAN</strong><small>AUTOMOBILES</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#inventory">Three-wheelers</a>
+        <a class="nav-link" href="#offers">Offers</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#location">Visit us</a>
+      </nav>
+      <div class="header-actions">
+        <button class="office-switch" id="officeSwitch" type="button"><span class="switch-dot"></span><span id="switchLabel">Office tools</span></button>
+        <button class="icon-button bag-button" id="cartButton" type="button" aria-label="Open shopping cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="cart-count" id="cartCount">0</span></button>
+      </div>
+    </header>
+
+    <main id="storefront">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A better ride starts here</div>
+            <h1>Find your next<br /><em>three-wheeler.</em></h1>
+            <p>Passenger, cargo and electric three-wheelers for every kind of journey. Explore the options and talk to our team.</p>
+          <div class="hero-buttons"><a class="button button-dark" href="#inventory">Explore three-wheelers <span>↗</span></a><a class="text-link" href="#why-us">Get to know us <span>→</span></a></div>
+          <div class="hero-proof"><div class="avatar-stack"><span>V</span><span>R</span><span>A</span><b>+</b></div><p><strong>A friendly team,</strong> here for your next ride</p></div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-image"></div>
+          <div class="hero-image-overlay"></div>
+          <div class="hero-tag"><span class="tag-icon">↗</span><span><strong>Three wheels. Many possibilities.</strong><small>Find the right fit for your journey</small></span></div>
+          <div class="hero-number">01 <span>— 03</span></div>
+          <div class="image-caption">THE OPEN ROAD, YOUR WAY</div>
+          <a class="hero-photo-credit" href="https://commons.wikimedia.org/wiki/File:Auto-rickshaws_waiting_for_passengers_outside_a_Metro_Railway_Station_in_India.jpg" target="_blank" rel="noreferrer">Photo: Salil Kumar Mukherjee · CC BY-SA 4.0</a>
+        </div>
+        <div class="hero-side-note">RIDE MORE. WORRY LESS.</div>
+      </section>
+
+      <section class="trust-strip" id="why-us">
+        <div class="trust-item"><span class="trust-icon">✳</span><span><strong>A little help goes a long way</strong><small>Friendly guidance, every step</small></span></div>
+        <div class="trust-item"><span class="trust-icon">↗</span><span><strong>Passenger or cargo</strong><small>Explore different three-wheeler uses</small></span></div>
+        <div class="trust-item"><span class="trust-icon">♡</span><span><strong>Here for the long ride</strong><small>Ask about service &amp; support</small></span></div>
+        <div class="trust-note">GOOD RIDES<br /><b>START WITH GOOD PEOPLE.</b></div>
+      </section>
+
+      <section class="inventory-section" id="inventory">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> THE THREE-WHEELER LINEUP</div><h2>Find your <em>right fit.</em></h2></div>
+          <a class="all-bikes-link" href="#inventory">Browse the collection <span>↗</span></a>
+        </div>
+        <div class="inventory-toolbar">
+          <div class="category-tabs" id="categoryTabs" aria-label="Filter by vehicle type">
+            <button class="category-tab selected" data-category="All" type="button">All three-wheelers <span id="allCount"></span></button>
+            <button class="category-tab" data-category="Passenger" type="button">Passenger</button>
+            <button class="category-tab" data-category="Cargo" type="button">Cargo</button>
+            <button class="category-tab" data-category="Electric" type="button">Electric</button>
+          </div>
+          <div class="toolbar-right">
+            <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4 4"/></svg><input id="searchInput" type="search" placeholder="Find your ride..." aria-label="Search rides" /></label>
+            <label class="price-range-label"><span>Min ₹</span><input id="priceMin" type="number" min="0" placeholder="Any" aria-label="Minimum price" /></label>
+            <label class="price-range-label"><span>Max ₹</span><input id="priceMax" type="number" min="0" placeholder="Any" aria-label="Maximum price" /></label>
+            <label class="sort-select"><span>Sort by</span><select id="sortSelect" aria-label="Sort rides"><option value="popular">Popular</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label>
+          </div>
+        </div>
+        <p class="price-notice">Illustrative sample vehicles and prices only—not confirmed Shree Vihaan stock or quotations. On-road price, specifications, availability and offers vary by model and location; please confirm with the dealership.</p>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="empty-state hidden" id="emptyState">No rides found. Try a different search or category.</div>
+      </section>
+
+      <section class="offers-section" id="offers">
+        <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> OFFERS &amp; DISCOUNTS</div><h2>A good time to <em>ask.</em></h2></div></div>
+        <div class="offers-card"><span class="offer-spark">✳</span><div><strong>Looking for a current deal?</strong><p>Seasonal discounts, exchange benefits and finance terms change. No offer is confirmed on this demo—send an enquiry and ask the showroom what is available for your chosen vehicle.</p></div><a class="button button-dark" href="#enquiry">Ask about offers <span>↗</span></a></div>
+      </section>
+
+      <section class="location-section" id="location">
+        <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> COME SAY HELLO</div><h2>Find <em>Shree Vihaan.</em></h2></div></div>
+        <div class="location-layout"><div class="location-map"><iframe title="Google Maps search for Shree Vihaan Automobiles" src="https://www.google.com/maps?q=Shree%20Vihaan%20Automobiles&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><div class="location-copy"><span class="location-icon">⌖</span><h3>Visit the showroom</h3><p>Search for Shree Vihaan Automobiles on Google Maps. Confirm the correct listing and opening hours before travelling; the exact showroom address has not been provided here.</p><a class="button button-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Shree%20Vihaan%20Automobiles" target="_blank" rel="noreferrer">Open Google Maps <span>↗</span></a></div></div>
+      </section>
+
+      <section class="enquiry-section" id="enquiry">
+        <div class="enquiry-intro"><div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> ENQUIRY / BOOKING</div><h2>Let’s talk <em>three-wheelers.</em></h2><p>Send your interest to the showroom team. This demo stores enquiries only in this browser; it does not place an order or send your details to the dealership.</p><div class="enquiry-summary"><strong>Your cart</strong><span id="enquiryCartSummary">No vehicles selected yet.</span></div></div>
+        <form class="enquiry-form" id="enquiryForm"><label for="enquiryName">Your name</label><input id="enquiryName" name="name" required maxlength="80" autocomplete="name" placeholder="Name" /><label for="enquiryPhone">Phone number</label><input id="enquiryPhone" name="phone" required inputmode="tel" autocomplete="tel" pattern="[+]?[0-9][0-9 ]{5,17}[0-9]" placeholder="Mobile number" /><label for="enquiryMessage">What would you like to know?</label><textarea id="enquiryMessage" name="message" rows="3" maxlength="500" placeholder="Availability, on-road price, test drive, offers..."></textarea><button class="button button-light" type="submit">Save enquiry <span>↗</span></button><p class="form-note">Local demo only. Add a secure backend and the showroom’s real contact details before publishing.</p></form>
+      </section>
+
+      <section class="reviews-section" id="reviews">
+        <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> CUSTOMER REVIEWS</div><h2>Good words from <em>good people.</em></h2></div><div class="review-score"><strong id="reviewAverage">—</strong><span id="reviewCount">No reviews yet</span></div></div>
+        <div class="reviews-layout"><div class="review-list" id="reviewList"></div><form class="review-form" id="reviewForm"><h3>Share your experience</h3><p>Please leave an honest review. Reviews are saved on this browser in this demo.</p><label for="reviewName">Your name</label><input id="reviewName" name="name" required maxlength="60" placeholder="Name" /><label for="reviewRating">Your rating</label><select id="reviewRating" name="rating" required><option value="">Choose a rating</option><option value="5">★★★★★ — Excellent</option><option value="4">★★★★☆ — Good</option><option value="3">★★★☆☆ — Okay</option><option value="2">★★☆☆☆ — Could be better</option><option value="1">★☆☆☆☆ — Poor</option></select><label for="reviewText">Your review</label><textarea id="reviewText" name="text" rows="3" maxlength="400" required placeholder="Tell others about your experience"></textarea><button class="button button-dark" type="submit">Submit review <span>↗</span></button></form></div>
+      </section>
+
+      <section class="visit-banner" id="visit">
+        <div class="visit-copy"><div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> NEED A HAND?</div><h2>We’ll help you<br /><em>find your fit.</em></h2><p>Questions about passenger, cargo or electric three-wheelers? Send us an enquiry and ask about current availability.</p><a class="button button-light" href="#enquiry">Talk to the showroom <span>↗</span></a></div>
+        <div class="visit-stamp"><span>YOUR<br />NEXT RIDE</span><b>IS OUT THERE</b><i>✳</i></div>
+        <div class="visit-footer"><span>SHREE VIHAAN AUTOMOBILES</span><span>GOOD PEOPLE. GOOD RIDES.</span></div>
+      </section>
+      <footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark"><svg viewBox="0 0 42 42" aria-hidden="true"><path d="M7 25.5 13.5 14h15L35 25.5M11 25.5h20M16 20h10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="11" cy="28" r="4.3" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="31" cy="28" r="4.3" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></span><span class="brand-copy"><strong>SHREE VIHAAN</strong><small>AUTOMOBILES</small></span></a><span>Thoughtful rides. Good people.</span><span>© <span id="year"></span> Shree Vihaan Automobiles</span></footer>
+    </main>
+
+    <main id="officeView" class="office-view hidden">
+      <div class="office-topline"><span>OFFICE WORKSPACE</span><span><i></i> LOCAL DEMO MODE</span></div>
+      <div class="office-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> DEALERSHIP TOOLS</div><h1>Your stock,<br /><em>at a glance.</em></h1><p>Update sample prices and stock counts. Changes are saved on this browser only.</p></div><button class="button button-dark" id="addVehicleButton" type="button"><span>＋</span> Add a vehicle</button></div>
+      <div class="office-stats"><article><span>VEHICLES LISTED</span><strong id="statVehicles">—</strong><small>Across all categories</small></article><article><span>IN STOCK</span><strong id="statStock">—</strong><small>Available units</small></article><article><span>LOW STOCK</span><strong id="statLowStock">—</strong><small>3 or fewer units</small></article><article><span>PRICE UPDATES</span><strong id="statUpdates">—</strong><small>Changes this session</small></article><article><span>ENQUIRIES</span><strong id="statEnquiries">—</strong><small>Saved on this browser</small></article></div>
+      <section class="office-panel"><div class="office-panel-heading"><div><h2>Vehicle inventory</h2><p>Adjust indicative prices and stock levels, then save each row.</p></div><label class="search-box office-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4 4"/></svg><input id="officeSearch" type="search" placeholder="Search inventory..." aria-label="Search inventory" /></label></div><div class="table-wrap"><table><thead><tr><th>VEHICLE</th><th>PHOTO</th><th>TYPE</th><th>INDICATIVE PRICE (₹)</th><th>STOCK</th><th>STATUS</th><th></th></tr></thead><tbody id="inventoryTable"></tbody></table></div></section>
+      <section class="office-panel orders-panel"><div class="office-panel-heading"><div><h2>Customer enquiries / bookings</h2><p>Manage enquiries saved from the customer form on this browser.</p></div></div><div class="table-wrap"><table><thead><tr><th>REFERENCE</th><th>CUSTOMER</th><th>INTERESTED VEHICLES</th><th>MESSAGE</th><th>STATUS</th><th>RECEIVED</th></tr></thead><tbody id="ordersTable"></tbody></table></div><p class="orders-empty hidden" id="ordersEmpty">No customer enquiries have been saved yet.</p></section>
+      <p class="office-disclaimer">Demo only: no sign-in, shared database or payment processing. Photo uploads and edits are saved only in this browser. PNG, JPG and WebP photos are supported; do not enter customer or confidential business information.</p>
+      <footer class="site-footer office-footer"><span>SHREE VIHAAN AUTOMOBILES</span><button class="text-link" id="backToStore" type="button">← Back to customer store</button><span>© <span class="footer-year"></span></span></footer>
+    </main>
+
+    <div class="drawer-backdrop hidden" id="drawerBackdrop"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+      <div class="drawer-header"><div><div class="eyebrow"><span class="eyebrow-line"></span> YOUR CART</div><h2>Ready to <em>enquire?</em></h2></div><button class="close-button" id="closeCart" aria-label="Close shopping cart" type="button">×</button></div>
+      <p class="drawer-intro">Add or remove vehicles and adjust quantities. Prices are illustrative only; this cart does not take payment or reserve stock.</p>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty"><span>♡</span><strong>Your cart is empty.</strong><p>Add a three-wheeler to get started.</p></div>
+      <div class="cart-total hidden" id="cartTotal"><span>Illustrative subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+      <div class="drawer-bottom hidden" id="drawerBottom"><p>Final price, stock and booking are confirmed by the showroom.</p><button class="button button-dark full-button" id="enquireButton" type="button">Continue to enquiry <span>↗</span></button></div>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
